@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Login - page</title>
+   
+<style>
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 15px;
+  
+  
+}
+</style>
+</head>
+<body >
+<h4><b> hellooo welcome </b></h4>
+<div >
+  <form th:action="@{/login}" method="post"  id ="form1" style="max-width:450px; ">
+          <fieldset  form = form1>
+          <legend> hellouser </legend >
+            <br>
+            <input size ="40%"   type="email" name="email" class="form-control" placeholder="E-mail" required autofocus/><br><br>
+            <input size ="40%"   type="password" name="password" class="form-control" placeholder="Password" required /><br><br>
+            <input type="submit" value="Login" class="btn btn-primary" />
+            <input type="checkbox" name="remember-me" />&nbsp;Remember Me
+          </fieldset  >  
+    </form>      
+</div>
+</body >
+</html>
